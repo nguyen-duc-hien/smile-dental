@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Templae</title>
+    <!-- taildwind css import -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="/assets/js/tailwind.config.js"></script>
+    <!-- custom css -->
+    <link rel="stylesheet" href="/assets/style/main.css" />
+
+    <!-- font import -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Outfit:wght@100..900&display=swap"
+        rel="stylesheet">
+
+    <!-- swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- fancy box -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css"
+        integrity="sha512-nNlU0WK2QfKsuEmdcTwkeh+lhGs6uyOxuUs+n+0oXSYDok5qy0EI0lt01ZynHq6+p/tbgpZ7P+yUb+r71wqdXg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <!-- header pc -->
+            <div class="header-pc hidden lg:block fixed top-0 w-full z-[5] bg-black">
+                <div class="container">
+                    <div class="flex items-center justify-between py-4 gap-6 2xl:gap-10">
+                        <nav class="3xl:w-[35%]">
+                            <ul class="flex items-center justify-between gap-4 2xl:gap-12">
+                                <li class="">
+                                    <a href="#" class="link-nav">Home</a>
+                                </li>
+                                <li class="relative sub-button">
+                                    <a href="#" class="link-nav">About Us
+                                        <figure class="w-4 h-4">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                viewBox="0 0 16 16" fill="none">
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M2.95369 5.67461C3.1334 5.46494 3.44905 5.44066 3.65872 5.62037L7.99999 9.34146L12.3413 5.62037C12.5509 5.44066 12.8666 5.46494 13.0463 5.67461C13.226 5.88427 13.2017 6.19992 12.9921 6.37963L8.32538 10.3796C8.13814 10.5401 7.86184 10.5401 7.67459 10.3796L3.00793 6.37963C2.79826 6.19992 2.77398 5.88427 2.95369 5.67461Z"
+                                                    fill="#808080" />
+                                            </svg>
+                                        </figure>
+                                    </a>
+                                    <ul class="sub-menu">
+                                        <li class="sub-item">
+                                            <a href="#" class="nav-link">sub 1</a>
+                                        </li>
+                                        <li class="sub-item">
+                                            <a href="#" class="nav-link">sub 1</a>
+                                        </li>
+                                        <li class="sub-item">
+                                            <a href="#" class="nav-link">sub 1</a>
+                                        </li>
+                                        <li class="sub-item">
+                                            <a href="#" class="nav-link">sub 1</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="relative sub-button">
+                                    <a href="#" class="link-nav">Services
+                                        <figure class="w-4 h-4">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                viewBox="0 0 16 16" fill="none">
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M2.95369 5.67461C3.1334 5.46494 3.44905 5.44066 3.65872 5.62037L7.99999 9.34146L12.3413 5.62037C12.5509 5.44066 12.8666 5.46494 13.0463 5.67461C13.226 5.88427 13.2017 6.19992 12.9921 6.37963L8.32538 10.3796C8.13814 10.5401 7.86184 10.5401 7.67459 10.3796L3.00793 6.37963C2.79826 6.19992 2.77398 5.88427 2.95369 5.67461Z"
+                                                    fill="#808080" />
+                                            </svg>
+                                        </figure>
+                                    </a>
+                                    <ul class="sub-menu">
+                                        <li class="sub-item">
+                                            <a href="#" class="nav-link">sub 1</a>
+                                        </li>
+                                        <li class="sub-item">
+                                            <a href="#" class="nav-link">sub 1</a>
+                                        </li>
+                                        <li class="sub-item">
+                                            <a href="#" class="nav-link">sub 1</a>
+                                        </li>
+                                        <li class="sub-item">
+                                            <a href="#" class="nav-link">sub 1</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="relative sub-button">
+                                    <a href="#" class="link-nav">Smile Gallery
+                                        <figure class="w-4 h-4">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                viewBox="0 0 16 16" fill="none">
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M2.95369 5.67461C3.1334 5.46494 3.44905 5.44066 3.65872 5.62037L7.99999 9.34146L12.3413 5.62037C12.5509 5.44066 12.8666 5.46494 13.0463 5.67461C13.226 5.88427 13.2017 6.19992 12.9921 6.37963L8.32538 10.3796C8.13814 10.5401 7.86184 10.5401 7.67459 10.3796L3.00793 6.37963C2.79826 6.19992 2.77398 5.88427 2.95369 5.67461Z"
+                                                    fill="#808080" />
+                                            </svg>
+                                        </figure>
+                                    </a>
+                                    <ul class="sub-menu">
+                                        <li class="sub-item">
+                                            <a href="#" class="nav-link">sub 1</a>
+                                        </li>
+                                        <li class="sub-item">
+                                            <a href="#" class="nav-link">sub 1</a>
+                                        </li>
+                                        <li class="sub-item">
+                                            <a href="#" class="nav-link">sub 1</a>
+                                        </li>
+                                        <li class="sub-item">
+                                            <a href="#" class="nav-link">sub 1</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="">
+                                    <a href="#" class="link-nav">Contact Us</a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <a href="/">
+                            <figure class="lg:max-w-[200px]"><img src="/assets/image/header-logo.svg" alt="logo">
+                            </figure>
+                        </a>
+
+                        <div class="3xl:w-[35%] flex items-center justify-end gap-8">
+                            <a href="#" class="link-nav">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="19" height="18" viewBox="0 0 19 18"
+                                    fill="none">
+                                    <path
+                                        d="M8.32824 3.98713L8.815 4.85933C9.25428 5.64644 9.07794 6.67899 8.38608 7.37085C8.38608 7.37085 8.38608 7.37085 8.38608 7.37085C8.38597 7.37097 7.54698 8.21016 9.06843 9.73161C10.5892 11.2524 11.4284 10.4148 11.4292 10.414C11.4292 10.4139 11.4292 10.414 11.4292 10.4139C12.1211 9.72211 13.1536 9.54578 13.9407 9.98505L14.8129 10.4718C16.0015 11.1351 16.1418 12.8019 15.0971 13.8466C14.4694 14.4744 13.7003 14.9629 12.8502 14.9951C11.4191 15.0493 8.98876 14.6872 6.55083 12.2492C4.11289 9.81129 3.75071 7.38092 3.80496 5.94982C3.83719 5.0997 4.32565 4.33068 4.9534 3.70292C5.99812 2.65821 7.66493 2.79858 8.32824 3.98713Z"
+                                        fill="white" />
+                                </svg>
+                                (678) 866-8770
+                            </a>
+                            <a href="#" class="button sm">Giao dịch ngay</a>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+            <!-- header-mobile -->
+            <div class="w-full lg:hidden header-mobile fixed top-0 z-[5] bg-black">
+                <div class="container flex justify-between py-5">
+                    <a href="/">
+                        <div class="logo">
+                            <figure class="max-w-[140px]">
+                                <img src="/assets/image/header-logo.svg" alt="logo">
+                            </figure>
+                        </div>
+                    </a>
+                    <button class="breadcrumb-button">
+                        <figure>
+                            <img src="/assets/image/icon/3bar-white.svg" alt="">
+                        </figure>
+                    </button>
+                </div>
+                <div
+                    class="breadcrumb-header hidden fixed w-[70vw] max-w-[350px] h-[100vh] top-0 right-0 z-[5] transform transition-transform duration-300 ease-in-out translate-x-full">
+                    <div class="shadow-1 flex flex-col gap-10 bg-white w-full h-full p-6">
+                        <div class="flex items-center justify-between">
+                            <a href="/">
+                                <div class="logo">
+                                    <figure class="max-w-[60px]">
+                                        <img src="/assets/image/header-logo.svg" alt="logo">
+                                    </figure>
+                                </div>
+                            </a>
+                            <button class="breadcrumb-close">
+                                <figure class="w-8 h-8">
+                                    <img src="/assets/image/icon/close.svg" alt="">
+                                </figure>
+                            </button>
+                        </div>
+
+                        <div class="breadcrumb-container custom-scrollbar">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- holder header -->
+            <!-- <div class="h-[95px] lg:h-[106px] 2xl:h-[136px]"></div> -->
+        </div>
+    </header>
+    <main>
+        <!-- -------------------- section 1 -------------------- -->
+        <section>
+            <div class="container">
+                abcd
+            </div>
+        </section>
+        <!-- -------------------- section 2 -------------------- -->
+
+        <!-- -------------------- section 3 -------------------- -->
+
+        <!-- -------------------- section 4 -------------------- -->
+
+        <!-- -------------------- section 5 -------------------- -->
+
+        <!-- -------------------- section 6 -------------------- -->
+
+        <!-- -------------------- section 7 -------------------- -->
+
+        <!-- -------------------- section 8 -------------------- -->
+
+        <!-- -------------------- section 9 -------------------- -->
+
+    </main>
+    <footer class="footer bg-secondary">
+        <div class="container pt-[72px] pb-16">
+            <div class="flex items-center justify-center">
+                <a href="#" class="">
+                    <figure><img src="/assets/image/footer-logo.svg" alt=""></figure>
+                </a>
+            </div>
+
+            <div class="mt-10 lg:mt-[72px]">
+                <div class="w-full flex flex-col lg:flex-row gap-10 justify-between">
+                    <div class="lg:w-1/4 lg:max-w-[402px]">
+                        <!-- social link -->
+                        <div class="flex flex-col gap-4 lg:max-w-[246px]">
+                            <a href="#" class="link-footer text-body-md-regular">
+                                <figure>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14"
+                                        fill="none">
+                                        <g clip-path="url(#clip0_2001_320)">
+                                            <path
+                                                d="M13.5252 9.32125L9.76091 7.706L7.73033 9.71559C7.01341 9.30142 6.35541 8.80267 5.77383 8.23509C5.19925 7.6465 4.69875 6.98734 4.284 6.27042L6.29358 4.24042L4.6795 0.475586L1.98858 1.17967C1.12116 1.40659 0.575748 2.25184 0.697081 3.14025C1.07916 5.93325 2.16475 8.26308 3.92408 10.0656L3.97541 10.1146C5.77616 11.8558 8.09958 12.9298 10.8827 13.3066C10.9626 13.3171 11.0413 13.3223 11.1201 13.3223C11.9093 13.3223 12.6169 12.7915 12.8217 12.0122L13.5252 9.32125Z"
+                                                fill="white" />
+                                            <path
+                                                d="M13.4167 6.41683H12.25V5.8335C12.25 3.58183 10.4177 1.75016 8.16666 1.75016H7.58333V0.583496H8.16666C11.0617 0.583496 13.4167 2.939 13.4167 5.8335V6.41683Z"
+                                                fill="white" />
+                                            <path
+                                                d="M11.0833 6.41699H9.91666V5.83366C9.91666 4.86883 9.13149 4.08366 8.16666 4.08366H7.58333V2.91699H8.16666C9.77491 2.91699 11.0833 4.22541 11.0833 5.83366V6.41699Z"
+                                                fill="white" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_2001_320">
+                                                <rect width="14" height="14" fill="white" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                </figure>
+                                (678) 866-8770
+                            </a>
+                            <a href="#" class="link-footer text-body-md-regular">
+                                <figure>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14"
+                                        fill="none">
+                                        <path
+                                            d="M12.6117 1.32422L10.8224 12.7664L7.06445 10.0337L4.22916 12.2676V8.11273L9.33333 4.08313L3.43495 7.39451L0.533913 5.28497L12.6117 1.32422Z"
+                                            fill="white" />
+                                    </svg>
+                                </figure>
+                                info@smilesforlifedental.com
+                            </a>
+                            <a href="#" class="link-footer">
+                                <figure>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14"
+                                        fill="none">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M11.4476 8.38023C11.9146 7.49411 12.25 6.54391 12.25 5.6266C12.25 2.30879 9.53785 0.4375 7 0.4375C4.46215 0.4375 1.75 2.30879 1.75 5.6266C1.75 6.54181 2.08553 7.49096 2.55245 8.37651C3.02211 9.26721 3.64306 10.1278 4.25543 10.8747C4.86894 11.623 5.48122 12.2661 5.93963 12.7217C6.16906 12.9498 6.36064 13.1316 6.49534 13.2569C6.64186 13.3931 6.79214 13.5251 6.94247 13.657C6.96163 13.6739 6.98084 13.6907 7 13.7076C7.0189 13.691 7.03784 13.6744 7.05674 13.6578C7.20716 13.5257 7.35761 13.3937 7.50435 13.2575C7.6391 13.1325 7.83068 12.951 8.06015 12.7232C8.51856 12.2682 9.13093 11.626 9.74448 10.8782C10.3569 10.1318 10.9779 9.2715 11.4476 8.38023ZM8.75 5.25C8.75 6.21648 7.96648 7 7 7C6.03352 7 5.25 6.21648 5.25 5.25C5.25 4.2835 6.03352 3.5 7 3.5C7.96648 3.5 8.75 4.2835 8.75 5.25Z"
+                                            fill="white" />
+                                    </svg>
+                                </figure>
+                                5745 Old Winder Highway,
+                                Suite E, Braselton, GA 30517
+                            </a>
+                        </div>
+
+                        <!-- map -->
+                        <style>
+                            .footer-map {
+                                margin-top: 40px;
+                                position: relative;
+                                width: 100%;
+                                overflow: hidden;
+                                padding-bottom: calc(162/402 * 100%);
+                            }
+
+                            .footer-map iframe {
+                                position: absolute;
+                                top: 0;
+                                left: 0;
+                                width: 100%;
+                                height: 100%;
+                                border: 0;
+                            }
+                        </style>
+                        <div class="footer-map overflow-hidden">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d8360.234517807752!2d105.84912116995456!3d21.030239772396325!3m2!1i1024!2i768!4f13.1!5e0!3m2!1svi!2s!4v1744859624582!5m2!1svi!2s"
+                                style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                    <!-- sub nav -->
+                    <div class="lg:w-[70%] lg:max-w-[1184px] flex max-lg:flex-wrap gap-10 justify-between">
+                        <div class="lg:max-w-[183px] flex flex-col gap-6">
+                            <div class="flex flex-col gap-4">
+                                <h2 class="text-heading-h7-semibold text-[#F2F2F2]">Link</h2>
+                                <hr class="footer-divider">
+                            </div>
+                            <ul class="flex flex-col gap-4">
+                                <li>
+                                    <a href="#" class="link-footer">
+                                        Meet Dr. Toan Vo
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="link-footer">
+                                        Meet the Team
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="link-footer">
+                                        Patient Care Philosophy
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="link-footer">
+                                        Contact
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="lg:max-w-[333px] flex flex-col gap-6">
+                            <div class="flex flex-col gap-4">
+                                <h2 class="text-heading-h7-semibold text-[#F2F2F2]">Services</h2>
+                                <hr class="footer-divider">
+                            </div>
+                            <ul class="flex flex-col gap-4">
+                                <li>
+                                    <a href="#" class="link-footer">
+                                        Porcelain and Composite Options
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="link-footer">
+                                        Bleaching
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="link-footer">
+                                        Cavities/Broken tooth Treatments
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="link-footer">
+                                        Missing Tooth Treatments
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="link-footer">
+                                        Comprehensive Damaged Teeth Care
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="lg:max-w-[387px] flex flex-col gap-6">
+                            <div class="flex flex-col gap-4">
+                                <h2 class="text-heading-h7-semibold text-[#F2F2F2]">Work Hours</h2>
+                                <hr class="footer-divider">
+                            </div>
+                            <div class="flex flex-col gap-4">
+                                <a href="#" class="link-footer">
+                                    Monday - Thursday: 8 AM - 5 PM
+                                </a>
+                                <a href="#" class="link-footer">
+                                    Friday: 8 AM - 4 PM
+                                </a>
+                            </div>
+                            <hr class="footer-divider">
+                            <p class="text-body-md-regular text-mono-gray-50">
+                                We’re redefining quality, affordable, and exceptional dental care. Contact us today and
+                                let our experts help you.
+                            </p>
+
+                            <div class="info-item">
+                                <div class="icon-wrap">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40"
+                                        fill="none">
+                                        <rect width="40" height="40" rx="20" fill="white" />
+                                        <path
+                                            d="M23.628 15.4044C22.586 14.3985 21.2607 13.8863 19.7845 13.8863C17.1658 13.8863 14.9493 15.6721 14.1587 18.0716C13.9576 18.6807 13.8433 19.3314 13.8433 20.0005C13.8433 20.6695 13.9576 21.3202 14.1587 21.9293C14.9493 24.3288 17.1658 26.1146 19.7845 26.1146C21.1373 26.1146 22.289 25.7546 23.1893 25.1455C24.2541 24.4257 24.9625 23.3505 25.1956 22.0816H19.7845V18.1547H29.2538C29.3727 18.8192 29.4366 19.5113 29.4366 20.2312C29.4366 23.3229 28.3398 25.9254 26.4386 27.6928C24.7751 29.2432 22.4992 30.1522 19.7845 30.1522C15.8542 30.1522 12.4541 27.8773 10.7997 24.5595C10.1187 23.189 9.73022 21.6386 9.73022 20.0005C9.73022 18.3623 10.1187 16.8119 10.7996 15.4414C12.454 12.1236 15.8542 9.84863 19.7845 9.84863C22.4946 9.84863 24.7705 10.8546 26.5118 12.4927L23.628 15.4044Z"
+                                            fill="#1C1C1C" />
+                                    </svg>
+                                </div>
+                                <div class="icon-wrap">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="21" viewBox="0 0 12 21"
+                                        fill="none">
+                                        <path
+                                            d="M10.8937 11.3023L11.4636 7.68118H7.95292V5.32748C7.95292 4.33734 8.44305 3.36984 10.0103 3.36984H11.6289V0.28626C10.6863 0.135952 9.7339 0.0546359 8.77931 0.0429688C5.88981 0.0429687 4.00337 1.77996 4.00337 4.92011V7.68118H0.800415V11.3023H4.00337V20.0607H7.95292V11.3023H10.8937Z"
+                                            fill="#1C1C1C" />
+                                    </svg>
+                                </div>
+                                <div class="icon-wrap">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
+                                        fill="none">
+                                        <path
+                                            d="M12.5 10C12.5 10.4945 12.3534 10.9778 12.0787 11.3889C11.804 11.8 11.4135 12.1205 10.9567 12.3097C10.4999 12.4989 9.99723 12.5484 9.51227 12.452C9.02732 12.3555 8.58186 12.1174 8.23223 11.7678C7.8826 11.4181 7.6445 10.9727 7.54804 10.4877C7.45157 10.0028 7.50108 9.50011 7.6903 9.04329C7.87952 8.58648 8.19995 8.19603 8.61107 7.92133C9.0222 7.64662 9.50555 7.5 10 7.5C10.6628 7.50076 11.2983 7.76439 11.7669 8.23307C12.2356 8.70175 12.4992 9.33719 12.5 10ZM17.8125 6.5625V13.4375C17.8112 14.5974 17.3498 15.7095 16.5296 16.5296C15.7095 17.3498 14.5974 17.8112 13.4375 17.8125H6.5625C5.40258 17.8112 4.29055 17.3498 3.47036 16.5296C2.65017 15.7095 2.18881 14.5974 2.1875 13.4375V6.5625C2.18881 5.40258 2.65017 4.29055 3.47036 3.47036C4.29055 2.65017 5.40258 2.18881 6.5625 2.1875H13.4375C14.5974 2.18881 15.7095 2.65017 16.5296 3.47036C17.3498 4.29055 17.8112 5.40258 17.8125 6.5625ZM13.75 10C13.75 9.25832 13.5301 8.5333 13.118 7.91661C12.706 7.29993 12.1203 6.81928 11.4351 6.53545C10.7498 6.25162 9.99584 6.17736 9.26841 6.32206C8.54098 6.46675 7.8728 6.8239 7.34835 7.34835C6.8239 7.8728 6.46675 8.54098 6.32206 9.26841C6.17736 9.99584 6.25162 10.7498 6.53545 11.4351C6.81928 12.1203 7.29993 12.706 7.91661 13.118C8.5333 13.5301 9.25832 13.75 10 13.75C10.9942 13.7489 11.9474 13.3534 12.6504 12.6504C13.3534 11.9474 13.7489 10.9942 13.75 10ZM15 5.9375C15 5.75208 14.945 5.57082 14.842 5.41665C14.739 5.26248 14.5926 5.14232 14.4213 5.07136C14.25 5.00041 14.0615 4.98184 13.8796 5.01801C13.6977 5.05419 13.5307 5.14348 13.3996 5.27459C13.2685 5.4057 13.1792 5.57275 13.143 5.7546C13.1068 5.93646 13.1254 6.12496 13.1964 6.29627C13.2673 6.46757 13.3875 6.61399 13.5417 6.717C13.6958 6.82002 13.8771 6.875 14.0625 6.875C14.3111 6.875 14.5496 6.77623 14.7254 6.60041C14.9012 6.4246 15 6.18614 15 5.9375Z"
+                                            fill="#1C1C1C" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- header script -->
+    <script defer src="/assets/js/header-scroll.js"></script>
+    <script defer src="/assets/js/sub-menu.js"></script>
+    <script defer src="/assets/js/header.js"></script>
+    <script defer src="/assets/js/accordion.js"></script>
+
+    <!-- swiper script -->
+    <script defer>
+        const swiper = new Swiper('#review-swiper', {
+            slidesPerView: 1,
+            spaceBetween: 0,
+            loop: true,
+            autoplay: {
+                delay: 50000,
+                disableOnInteraction: false,
+            },
+            speed: 1000,
+
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
+</body>
+
+</html>
