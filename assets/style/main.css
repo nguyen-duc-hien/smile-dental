@@ -2493,3 +2493,88 @@ hr.footer-divider {
     width: 80%;
   }
 }
+
+.our-team-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 40px;
+}
+@media (max-width: 1024px) {
+  .our-team-wrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+.our-team-item {
+  width: calc(50% - 20px);
+  position: relative;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.our-team-item .our-img {
+  position: relative;
+}
+.our-team-item .our-img::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.8)));
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 100%);
+}
+.our-team-item .our-img figure {
+  width: 100%;
+  height: 432px;
+}
+.our-team-item .our-img figure img {
+  min-width: 100%;
+}
+.our-team-item .our-context {
+  position: absolute;
+  z-index: 2;
+  bottom: 32px;
+  left: 40px;
+  right: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 8px;
+}
+.our-team-item .our-context .desc {
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  max-height: 0;
+  overflow: hidden;
+}
+.our-team-item:hover {
+  width: calc(100% - 20px);
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.our-team-item:hover .our-context .desc {
+  max-height: 200px;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+@media (max-width: 1024px) {
+  .our-team-item {
+    width: 100%;
+  }
+  .our-team-item:hover {
+    width: 100%;
+  }
+  .our-team-item:hover .our-context .desc {
+    max-height: 200px;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+  }
+}

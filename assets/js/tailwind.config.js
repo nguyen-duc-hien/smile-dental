@@ -50,6 +50,7 @@ tailwind.config = {
                     30: "#BBBBBB",
                     20: "#DDDDDD",
                     10: "#EEEEEE",
+                    1: "#f9fafb",
                 },
             },
         }
