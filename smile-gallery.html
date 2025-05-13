@@ -233,6 +233,60 @@
                         </div>
                         <div
                             class="mt-10 lg:mt-[72px] grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 3xl:grid-cols-4 gap-10 xl:gap-x-12 xl:gap-y-[72px]">
+                            <style>
+                                .fancybox-caption {
+                                    width: 95%;
+                                    max-width: 634px;
+                                    padding: 24px;
+                                    background: rgba(0, 0, 0, 0.70);
+                                    backdrop-filter: blur(16px);
+                                    height: fit-content;
+                                    top: 72%;
+                                    left: 50%;
+                                    transform: translateX(-50%);
+                                }
+                            </style>
+                            <div class="figure-showcase">
+                                <a href="/assets/image/homepage/figure-showcase.png" data-fancybox="gallery"
+                                    data-caption="Patient was unhappy with her smile due to discoloration from tetracycline staining, missing lower front teeth, and worn appearance. She also had trouble chewing due to the missing teeth and unevenness in her bite. Patient wanted our Hollywood white shade. We completed crowns on the top and a bridge on the bottom using the Hollywood white shade.">
+                                    <figure>
+                                        <img src="/assets/image/homepage/figure-showcase.png" alt="">
+                                    </figure>
+                                </a>
+                            </div>
+                            <div class="figure-showcase">
+                                <a href="/assets/image/homepage/figure-showcase.png" data-fancybox="gallery"
+                                    data-caption="Patient was unhappy with her smile due to discoloration from tetracycline staining, missing lower front teeth, and worn appearance. She also had trouble chewing due to the missing teeth and unevenness in her bite. Patient wanted our Hollywood white shade. We completed crowns on the top and a bridge on the bottom using the Hollywood white shade.">
+                                    <figure>
+                                        <img src="/assets/image/homepage/figure-showcase.png" alt="">
+                                    </figure>
+                                </a>
+                            </div>
+                            <div class="figure-showcase">
+                                <a href="/assets/image/homepage/figure-showcase.png" data-fancybox="gallery"
+                                    data-caption="Patient was unhappy with her smile due to discoloration from tetracycline staining, missing lower front teeth, and worn appearance. She also had trouble chewing due to the missing teeth and unevenness in her bite. Patient wanted our Hollywood white shade. We completed crowns on the top and a bridge on the bottom using the Hollywood white shade.">
+                                    <figure>
+                                        <img src="/assets/image/homepage/figure-showcase.png" alt="">
+                                    </figure>
+                                </a>
+                            </div>
+                            <div class="figure-showcase">
+                                <a href="/assets/image/homepage/figure-showcase.png" data-fancybox="gallery"
+                                    data-caption="Patient was unhappy with her smile due to discoloration from tetracycline staining, missing lower front teeth, and worn appearance. She also had trouble chewing due to the missing teeth and unevenness in her bite. Patient wanted our Hollywood white shade. We completed crowns on the top and a bridge on the bottom using the Hollywood white shade.">
+                                    <figure>
+                                        <img src="/assets/image/homepage/figure-showcase.png" alt="">
+                                    </figure>
+                                </a>
+                            </div>
+                            <div class="figure-showcase">
+                                <a href="/assets/image/homepage/figure-showcase.png" data-fancybox="gallery"
+                                    data-caption="Patient was unhappy with her smile due to discoloration from tetracycline staining, missing lower front teeth, and worn appearance. She also had trouble chewing due to the missing teeth and unevenness in her bite. Patient wanted our Hollywood white shade. We completed crowns on the top and a bridge on the bottom using the Hollywood white shade.">
+                                    <figure>
+                                        <img src="/assets/image/homepage/figure-showcase.png" alt="">
+                                    </figure>
+                                </a>
+                            </div>
+
 
                         </div>
                     </div>
@@ -467,30 +521,23 @@
     <script defer src="/assets/js/header.js"></script>
     <script defer src="/assets/js/accordion.js"></script>
 
-    <!-- swiper script -->
-    <script defer>
-        const swiper = new Swiper('#pa-swiper', {
-            slidesPerView: 1,
-            spaceBetween: 24,
-            loop: true,
-            autoplay: {
-                delay: 5000,
-                disableOnInteraction: false,
-            },
-            breakpoints: {
-                768: {
-                    slidesPerView: 2,
-                },
-                1024: {
-                    slidesPerView: 3,
-                },
-            },
-            speed: 1000,
 
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
+    <!-- fancy-box -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"
+        integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        $('[data-fancybox]').fancybox({
+            protect: true,
+            loop: true,
+            buttons: [
+                "zoom",
+                "slideShow",
+                "fullScreen",
+                "download",
+                "thumbs",
+                "close"
+            ],
         });
     </script>
 </body>
