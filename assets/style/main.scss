@@ -254,34 +254,43 @@ select {
   }
 }
 // ----------------------- Text body style library -----------------------
-.text-sub-heading {
-  font-size: 20px;
-  line-height: 125%;
-  &-regular {
-    @extend .text-sub-heading;
-    font-weight: 400;
-  }
-  &-medium {
-    @extend .text-sub-heading;
-    font-weight: 500;
-  }
-  &-semibold {
-    @extend .text-sub-heading;
-    font-weight: 600;
-  }
-  &-bold {
-    @extend .text-sub-heading;
-    font-weight: 700;
-  }
-  @media screen and (max-width: 1280px) {
-    font-size: 18px;
-  }
-
-  @media screen and (max-width: 992px) {
-    font-size: 16px;
-  }
-}
 .text-body {
+  &-xl {
+    font-size: 20px;
+    line-height: 140%;
+    @media screen and (max-width: 1280px) {
+      font-size: 18px;
+    }
+    @media screen and (max-width: 992px) {
+      font-size: 16px;
+    }
+
+    &-uppercase {
+      @extend .text-body-xl;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+
+    &-bold {
+      @extend .text-body-xl;
+      font-weight: 700;
+    }
+
+    &-semibold {
+      @extend .text-body-xl;
+      font-weight: 600;
+    }
+
+    &-medium {
+      @extend .text-body-xl;
+      font-weight: 500;
+    }
+
+    &-regular {
+      @extend .text-body-xl;
+      font-weight: 400;
+    }
+  }
   &-lg {
     font-size: 18px;
     line-height: 155.56%;
@@ -2033,17 +2042,19 @@ hr {
   }
 }
 
-.ss4-wrap {
-  padding: 48px 40px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 24px;
-  @media (max-width: 992px) {
-    flex-direction: column;
-    padding: 24px 20px;
+.ss4 {
+  &-wrap {
+    padding: 48px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    @media (max-width: 992px) {
+      flex-direction: column;
+      padding: 24px 20px;
+    }
   }
-  .ss4-item {
+  &-item {
     padding: 40px 32px;
     max-width: 444px;
     display: flex;

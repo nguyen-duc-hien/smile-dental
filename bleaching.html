@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Homepage</title>
+    <title>Bleaching</title>
     <!-- taildwind css import -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="/assets/js/tailwind.config.js"></script>
@@ -193,59 +193,31 @@
     <main>
         <!-- -------------------- section 1 -------------------- -->
         <style>
-            .home-banner {
-                position: relative;
-                width: 100%;
-            }
-
-            .video-wrapper {
-                width: 100%;
-                height: 100%;
-            }
-
-            .video-wrapper::after {
-                content: "";
-                width: 100%;
-                height: 100%;
-                position: absolute;
-                top: 0;
-                left: 0;
-                background: linear-gradient(179deg, rgba(0, 0, 0, 0.00) 54.41%, rgba(0, 0, 0, 0.30) 86.32%);
-            }
-
-            .video-wrapper figure {
-                width: 100%;
-                height: 100%;
-            }
-
-            .video-wrapper figure video {
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
+            .banner-img {
+                background: url(/assets/image/banner-img.png) no-repeat;
+                background-size: cover;
+                background-position: center;
             }
         </style>
-        <section class="home-banner h-[70vh] lg:h-[100vh] lg:max-h-[930px]">
-            <div class="video-wrapper">
-                <figure><img class="min-w-full" src="/assets/image/homepage/banner.png" alt="img"></figure>
-                <!-- trong phần banner này dùng video, hiện tại đang để là img nên khi code thay video vào đây nhé -->
-                <!-- <figure><video src="https://www.youtube.com/watch?v=LXb3EKWsInQ" loop autoplay muted
-                        playsinline></video></figure> -->
-            </div>
-
-            <div class="container h-full absolute top-0 left-1/2 -translate-x-1/2 flex items-end pb-6 lg:pb-16">
-                <div class="flex flex-col gap-6 max-w-[485px]">
-                    <h2 class="text-heading-h2-semibold font-title text-white">You ready for a healthier smile?</h2>
-                    <p class="text-body-lg-medium text-white">Experience compassionate care and advanced dental
-                        solutions with our expert
-                        dentist in
-                        Braseltion, GA
-                        now!</p>
-                    <a href="#" class="button">Schedule Now</a>
+        <section class="cta-banner banner-img">
+            <div class="container">
+                <div class="flex flex-col items-center mx-auto max-w-[767px]">
+                    <p class="text-body-lg-regular text-white uppercase">
+                        Cosmetic Dentistry
+                    </p>
+                    <h1 class="mt-2 text-heading-h2-semibold text-white font-title text-center">
+                        Bleaching
+                    </h1>
+                    <p class="mt-6 text-body-lg-medium text-mono-gray-10 text-center">
+                        At our office, we offer two effective teeth whitening solutions: custom take-home bleaching
+                        trays and in-office
+                        whitening.
+                    </p>
                 </div>
             </div>
         </section>
         <!-- -------------------- section 2 -------------------- -->
-        <section class="pb-10 lg:pb-20 relative">
+        <section class="py-10 lg:py-20 relative">
             <figure class="absolute left-0 top-0"><img src="/assets/image/homepage/ss2-illus-1.svg" alt="illus">
             </figure>
             <figure class="absolute right-0 top-0"><img src="/assets/image/homepage/ss2-illus-2.svg" alt="illus">
@@ -256,252 +228,22 @@
                     <div class="hidden lg:block"></div>
                     <!-- main-content -->
                     <div class="col-span-12 lg:col-span-10">
-                        <div class="mx-auto flex flex-col gap-10 lg:max-w-[613px]">
-                            <div class="float-line-dot">
-                                <div class="line"></div>
-                                <div class="dot"></div>
-                            </div>
-                            <div class="flex flex-col items-center">
-                                <p class="text-body-lg-regular font-light text-black">Special care for your smile</p>
-                                <h2 class="mt-2 text-heading-h2-semibold font-title text-primary-2">Welcome to Smile
-                                    Dental</h2>
-                                <div class="mt-6 max-w-[478px] flex flex-col gap-6">
-                                    <p class="text-body-lg-regular text-desc">Our team treats every patient like family,
-                                        ensuring a gentle, professional, and
-                                        patient-first experience. A healthier
-                                        smile, a brighter you are because everyone deserves that.</p>
-                                    <figure><img src="/assets/image/homepage/ss2-illus-3.svg" alt="illus"></figure>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="mt-10 lg:mt-[72px] w-full grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4">
-                            <div class="ss2-item">
-                                <div class="icon-wrap">
-                                    <figure><img src="/assets/image/homepage/item-illus-1.svg" alt="item-illus">
-                                    </figure>
-                                </div>
-                                <div class="flex flex-col items-center gap-4">
-                                    <h2 class="text-body-lg-medium text-mono-dark-90">Modern Equipment</h2>
-                                    <p class="text-body-lg-regular text-mono-gray-50 text-center">
-                                        Advanced tools for precise, painless care.
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="ss2-item">
-                                <div class="icon-wrap">
-                                    <figure><img src="/assets/image/homepage/item-illus-2.svg" alt="item-illus">
-                                    </figure>
-                                </div>
-                                <div class="flex flex-col items-center gap-4">
-                                    <h2 class="text-body-lg-medium text-mono-dark-90">Modern Equipment</h2>
-                                    <p class="text-body-lg-regular text-mono-gray-50 text-center">
-                                        Advanced tools for precise, painless care.
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="ss2-item">
-                                <div class="icon-wrap">
-                                    <figure><img src="/assets/image/homepage/item-illus-3.svg" alt="item-illus">
-                                    </figure>
-                                </div>
-                                <div class="flex flex-col items-center gap-4">
-                                    <h2 class="text-body-lg-medium text-mono-dark-90">Modern Equipment</h2>
-                                    <p class="text-body-lg-regular text-mono-gray-50 text-center">
-                                        Advanced tools for precise, painless care.
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="ss2-item">
-                                <div class="icon-wrap">
-                                    <figure><img src="/assets/image/homepage/item-illus-4.svg" alt="item-illus">
-                                    </figure>
-                                </div>
-                                <div class="flex flex-col items-center gap-4">
-                                    <h2 class="text-body-lg-medium text-mono-dark-90">Modern Equipment</h2>
-                                    <p class="text-body-lg-regular text-mono-gray-50 text-center">
-                                        Advanced tools for precise, painless care.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- place -->
-                    <div class="hidden lg:block"></div>
-                </div>
-            </div>
-        </section>
-        <!-- -------------------- section 3 -------------------- -->
-        <style>
-            .ss3-bg {
-                background: url('/assets/image/homepage/s3-bg.png') no-repeat right/cover;
-            }
-        </style>
-        <section class="ss3-bg py-10 lg:pt-20 lg:pb-[160px]">
-            <div class="container">
-                <div class="lg:grid lg:grid-cols-12 lg:gap-10">
-                    <!-- place -->
-                    <div class="hidden lg:block"></div>
-                    <!-- content -->
-                    <div class="col-span-12 lg:col-span-10">
                         <div class="w-full grid grid-cols-1 lg:grid-cols-2 gap-10">
-                            <div class="showcase-img-right">
-                                <div class="img-main">
-                                    <figure><img src="/assets/image/homepage/s3-img-1.png" alt="img"></figure>
-                                </div>
-                                <div class="img-sub">
-                                    <figure><img src="/assets/image/homepage/s3-img-2.png" alt="img"></figure>
-                                </div>
-                            </div>
-                            <div class="flex items-end gap-6 lg:gap-[51px]">
-                                <div class="flex-1">
-                                    <p class="text-body-lg-regular font-light text-black">About Us</p>
-                                    <h2
-                                        class="mt-3 lg:max-w-[536px] text-heading-h3-semibold font-title text-primary-2">
-                                        Transforming Smiles
-                                        with
-                                        Care, Comfort, and Expertise</h2>
-                                    <p class="mt-4 text-body-lg-regular text-mono-dark-90">Struggling with dental
-                                        issues that impact your confidence and overall
-                                        well-being? You're not alone. At Smile Dental,
-                                        we’ve helped countless patients achieve healthier, brighter smiles with
-                                        expert care and a patient-first approach.</p>
-                                    <ul
-                                        class="mt-10 flex flex-col gap-6 list-check lg:max-w-[460px] text-body-lg-regular text-mono-dark-90">
-                                        <li><span class="font-medium">Unconfident Smile.</span> Regain your
-                                            confidence with expert dental care.</li>
-                                        <li><span class="font-medium">Pain & Sensitivity.</span> Say goodbye to
-                                            discomfort with gentle treatments.
-                                        </li>
-                                        <li><span class="font-medium">Complicated Procedures.</span> Experience
-                                            stress-free dentistry with advanced
-                                            technology.</li>
-                                        <li><span class="font-medium">Unconfident Smile.</span> Regain your
-                                            confidence with expert dental care.</li>
-                                    </ul>
-                                </div>
-                                <div class="float-line-dot">
+                            <div class="lg:max-w-[641px] mt-auto">
+                                <p class="text-body-lg-regular font-light text-black">Bleaching</p>
+                                <h2 class="mt-3 text-heading-h3-semibold font-title text-primary-2">
+                                    Brighten Your Smile with Professional Whitening
+                                </h2>
+                                <p class="mt-4 text-body-lg-regular text-mono-dark-90">
+                                    At our office, we offer two effective teeth whitening solutions: custom take-home
+                                    bleaching trays and in-office
+                                    whitening. Both methods deliver impressive results while being safe, personalized,
+                                    and designed for your comfort and
+                                    convenience.
+                                </p>
+                                <div class="mt-10 xl:mt-20 3xl:mt-[118px] float-line-dot w-fit">
                                     <div class="line"></div>
                                     <div class="dot"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- place -->
-                    <div class="hidden lg:block"></div>
-                </div>
-            </div>
-        </section>
-        <!-- -------------------- section 4 -------------------- -->
-        <style>
-            .ss4-bg {
-                position: relative;
-                background: url('/assets/image/homepage/s4-bg.png') no-repeat top/contain;
-            }
-
-            .ss4-bg:before {
-                content: "";
-                position: absolute;
-                top: 0;
-                left: 0;
-                width: 100%;
-                padding-top: calc(681/1920*100%);
-                background: rgba(37, 48, 63, 0.80);
-            }
-        </style>
-        <!-- -------------------- section 5 -------------------- -->
-        <section class="pb-10 lg:pb-20">
-            <div class="ss4-bg">
-                <div class="container relative z-[2]">
-                    <div class="flex flex-col items-center gap-10">
-                        <div class="float-line-dot line-white">
-                            <div class="line"></div>
-                            <div class="dot"></div>
-                        </div>
-                        <div class="flex flex-col items-center gap-3">
-                            <p class="text-body-lg-regular font-light text-white">Our Services</p>
-                            <h2 class="text-heading-h3-semibold font-title text-white">Complete Care for Your Smile</h2>
-                        </div>
-                    </div>
-                    <div class="ss4-wrap mx-auto lg:max-w-[87.5%] mt-10 lg:mt-[72px] bg-white shadow-1">
-                        <div class="ss4-item">
-                            <div class="flex flex-col gap-4">
-                                <p class="text-body-md-medium text-primary-2">01</p>
-                                <hr class="divider-ddd">
-                                <h2 class="text-heading-h6-regular text-mono-dark-90">Cosmetic Dentistry</h2>
-                                <p class="text-body-lg-regular text-mono-gray-50">Transform your smile with teeth
-                                    whitening, veneers, and advanced treatments designed
-                                    to enhance your confidence and
-                                    appearance.</p>
-                            </div>
-                            <div class="flex flex-col gap-6">
-                                <a href="#" class="learn-more">Learn More</a>
-                                <figure><img class="min-w-full" src="/assets/image/homepage/s4-img.png" alt="img">
-                                </figure>
-                            </div>
-                        </div>
-                        <div class="ss4-item">
-                            <div class="flex flex-col gap-4">
-                                <p class="text-body-md-medium text-primary-2">01</p>
-                                <hr class="divider-ddd">
-                                <h2 class="text-heading-h6-regular text-mono-dark-90">Cosmetic Dentistry</h2>
-                                <p class="text-body-lg-regular text-mono-gray-50">Transform your smile with teeth
-                                    whitening, veneers, and advanced treatments designed
-                                    to enhance your confidence and
-                                    appearance.</p>
-                            </div>
-                            <div class="flex flex-col gap-6">
-                                <a href="#" class="learn-more">Learn More</a>
-                                <figure><img class="min-w-full" src="/assets/image/homepage/s4-img.png" alt="img">
-                                </figure>
-                            </div>
-                        </div>
-                        <div class="ss4-item">
-                            <div class="flex flex-col gap-4">
-                                <p class="text-body-md-medium text-primary-2">01</p>
-                                <hr class="divider-ddd">
-                                <h2 class="text-heading-h6-regular text-mono-dark-90">Cosmetic Dentistry</h2>
-                                <p class="text-body-lg-regular text-mono-gray-50">Transform your smile with teeth
-                                    whitening, veneers, and advanced treatments designed
-                                    to enhance your confidence and
-                                    appearance.</p>
-                            </div>
-                            <div class="flex flex-col gap-6">
-                                <a href="#" class="learn-more">Learn More</a>
-                                <figure><img class="min-w-full" src="/assets/image/homepage/s4-img.png" alt="img">
-                                </figure>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- -------------------- section 6 -------------------- -->
-        <section class="py-10 lg:py-20 relative">
-            <figure class="absolute left-0 bottom-0"><img src="/assets/image/illus-left-bot.svg" alt="illus">
-            </figure>
-            <figure class="absolute right-0 bottom-0"><img src="/assets/image/homepage/ss2-illus-2.svg" alt="illus">
-            </figure>
-            <div class="container">
-                <div class="lg:grid lg:grid-cols-12 lg:gap-10">
-                    <!-- place -->
-                    <div class="hidden lg:block"></div>
-                    <!-- content -->
-                    <div class="col-span-12 lg:col-span-10">
-                        <div class="w-full grid grid-cols-1 lg:grid-cols-2 gap-10">
-                            <div class="lg:max-w-[641px]">
-                                <p class="text-body-lg-regular font-light text-black">Our People</p>
-                                <h2 class="mt-3 lg:max-w-[536px] text-heading-h3-semibold font-title text-primary-2">
-                                    Meet Dr. Toan Vo & Our Dedicated Dental Team</h2>
-                                <p class="mt-4 text-body-lg-regular text-mono-dark-90">Struggling with dental
-                                    “It’s not just about fixing teeth; it’s about changing how people see
-                                    themselves. We consider how your teeth should look
-                                    and what those teeth should say about you. We prioritize our space and the
-                                    patient experience. Everything has to be
-                                    right, and that’s our promise – want-based dentistry.”</p>
-                                <div class="mt-12 flex items-center gap-6">
-                                    <a href="#" class="button">Meet Dr. Toan Vo</a>
-                                    <a href="#" class="button border-gray-20">Meet Our Team</a>
                                 </div>
                             </div>
                             <div class="flex justify-end">
@@ -521,94 +263,181 @@
                 </div>
             </div>
         </section>
-        <!-- -------------------- section 7 -------------------- -->
-        <section class="pb-10 lg:pb-20 bg-secondary">
+        <!-- -------------------- section 3 -------------------- -->
+        <style>
+            .ss4-bg {
+                position: relative;
+                background: url('/assets/image/homepage/s4-bg.png') no-repeat top/contain;
+            }
+
+            .ss4-bg:before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                padding-top: calc(681/1920*100%);
+                background: rgba(37, 48, 63, 0.80);
+            }
+        </style>
+        <section class="pb-10 lg:pb-20">
+            <div class="ss4-bg">
+                <div class="container relative z-[2]">
+                    <div class="flex flex-col items-center gap-10">
+                        <div class="float-line-dot line-white">
+                            <div class="line"></div>
+                            <div class="dot"></div>
+                        </div>
+                        <div class="flex flex-col items-center gap-3">
+                            <p class="text-body-lg-regular font-light text-white">Comparison</p>
+                            <h2 class="text-heading-h3-semibold font-title text-white">Take-Home Whitening vs. In-Office
+                                Whitening</h2>
+                        </div>
+                    </div>
+                    <div class="ss4-wrap mx-auto lg:max-w-[87.5%] mt-10 lg:mt-[72px] bg-white shadow-1">
+                        <div class="w-full grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-14">
+                            <div class="ss4-item !gap-10 !max-w-full">
+                                <div class="flex flex-col gap-4">
+                                    <p class="text-body-md-medium text-primary-2 uppercase">OPTION 1</p>
+                                    <hr class="divider-ddd">
+                                    <h2 class="text-heading-h6-regular text-mono-dark-90">Take-Home Whitening
+                                    </h2>
+                                    <p class="text-body-lg-regular text-mono-gray-50 min-h-3lh">
+                                        Custom take-home whitening is our recommended first step for most patients,
+                                        especially those with busy schedules and
+                                        minimal dental corrections needed.
+                                    </p>
+                                </div>
+                                <figure><img class="min-w-full h-[298px]" src="/assets/image/homepage/s4-img.png"
+                                        alt="img">
+                                </figure>
+                                <div class="flex flex-col gap-4">
+                                    <p class="text-body-xl-semibold text-[#181818]">How it works</p>
+                                    <ul class="flex flex-col gap-4 list-check text-body-lg-regular text-mono-dark-90">
+                                        <li>
+                                            We take molds of your teeth to create custom trays tailored to your mouth.
+                                        </li>
+                                        <li>
+                                            You’ll apply a small drop of bleaching gel into each tray section, targeting
+                                            the front 10–12 teeth on both the upper and
+                                            lower arches.
+                                        </li>
+                                        <li>
+                                            Wear the trays for 30 minutes per day for 10–14 days.
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="flex flex-col gap-4">
+                                    <p class="text-body-xl-semibold text-[#181818]">Perfect for patients who</p>
+                                    <ul class="flex flex-col gap-4 list-check text-body-lg-regular text-mono-dark-90">
+                                        <li>
+                                            Want a gradual and controlled whitening process
+                                        </li>
+                                        <li>
+                                            Are satisfied with their tooth alignment and shape
+                                        </li>
+                                        <li>
+                                            Prefer a more affordable solution
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="flex flex-col gap-4">
+                                    <p class="text-body-xl-semibold text-[#181818]">What to expect</p>
+                                    <ul class="flex flex-col gap-4 list-check text-body-lg-regular text-mono-dark-90">
+                                        <li>
+                                            5–8 shade improvement in brightness
+                                        </li>
+                                        <li>
+                                            Results maintained with 30-minute touch-ups every 3–6 months
+                                        </li>
+                                        <li>
+                                            The bleaching gel lasts 1–2 years if stored in the refrigerator
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="ss4-item !gap-10 !max-w-full">
+                                <div class="flex flex-col gap-4">
+                                    <p class="text-body-md-medium text-primary-2 uppercase">OPTION 2</p>
+                                    <hr class="divider-ddd">
+                                    <h2 class="text-heading-h6-regular text-mono-dark-90">In-Office Whitening
+                                    </h2>
+                                    <p class="text-body-lg-regular text-mono-gray-50 min-h-3lh">
+                                        As with the take-home option, we recommend maintenance bleaching every 3–6
+                                        months to preserve your bright smile. We’ll
+                                        guide you every step of the way to ensure you achieve and maintain the whitening
+                                        results you’re looking for.
+                                    </p>
+                                </div>
+                                <figure><img class="min-w-full h-[298px]" src="/assets/image/homepage/s4-img.png"
+                                        alt="img">
+                                </figure>
+                                <div class="flex flex-col gap-4">
+                                    <p class="text-body-xl-semibold text-[#181818]">How it works</p>
+                                    <ul class="flex flex-col gap-4 list-check text-body-lg-regular text-mono-dark-90">
+                                        <li>
+                                            Typically completed over two sessions in our office
+                                        </li>
+                                        <li>
+                                            Each session is equivalent to 4–5 take-home treatments
+                                        </li>
+                                        <li>
+                                            You’ll still receive custom trays for ongoing at-home maintenance
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="flex flex-col gap-4">
+                                    <p class="text-body-xl-semibold text-[#181818]">Perfect for patients who</p>
+                                    <ul class="flex flex-col gap-4 list-check text-body-lg-regular text-mono-dark-90">
+                                        <li>
+                                            Patients who want to whiten teeth quickly for an event
+                                        </li>
+                                        <li>
+                                            Those who prefer a more supervised process
+                                        </li>
+                                        <li>
+                                            Anyone who cannot commit to 10–14 days of at-home bleaching
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- -------------------- section 4 -------------------- -->
+        <section class="pb-10 lg:pb-[100px] bg-[#F9FAFB]">
             <div class="container">
                 <div class="lg:grid lg:grid-cols-12 lg:gap-10">
                     <!-- place -->
                     <div class="hidden lg:block"></div>
                     <!-- main-content -->
                     <div class="col-span-12 lg:col-span-10">
-                        <div class="mx-auto flex flex-col gap-10 lg:max-w-[613px]">
+                        <div class="mx-auto flex flex-col gap-10">
                             <div class="float-line-dot">
                                 <div class="line"></div>
                                 <div class="dot"></div>
                             </div>
                             <div class="flex flex-col items-center">
-                                <p class="text-body-lg-regular font-light text-white">Special care for your smile</p>
-                                <h2 class="mt-2 text-heading-h2-semibold font-title text-primary">Welcome to Smile
-                                    Dental</h2>
-                                <div class="mt-6 max-w-[403px] flex flex-col gap-6">
-                                    <p class="text-body-lg-regular text-white text-center">Explore our Smile Gallery to
-                                        see the
-                                        transformations we've achieved for our patients.</p>
+                                <p class="text-body-lg-regular font-light text-black text-center">“Every smile tells a
+                                    story,
+                                    and I’m here
+                                    to help you feel confident in yours”</p>
+                                <h2 class="mt-2 text-heading-h2-semibold font-title text-primary-2 text-center">
+                                    Education and continuing education</h2>
+                                <div class="mt-6 max-w-[478px] flex flex-col gap-6">
+                                    <p class="text-body-lg-regular text-desc text-center">Dr. Vo is committed to
+                                        lifelong
+                                        learning, ensuring
+                                        his patients receive the most advanced dental care.</p>
                                     <figure><img src="/assets/image/homepage/ss2-illus-3.svg" alt="illus"></figure>
                                 </div>
                             </div>
                         </div>
 
-                        <div
-                            class="mt-10 lg:mt-[72px] w-full grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6 xl:gap-12">
-                            <div class="figure-showcase">
-                                <figure><img src="/assets/image/homepage/figure-showcase.png" alt="figure"></figure>
-                            </div>
-                            <div class="figure-showcase">
-                                <figure><img src="/assets/image/homepage/figure-showcase.png" alt="figure"></figure>
-                            </div>
-                            <div class="figure-showcase">
-                                <figure><img src="/assets/image/homepage/figure-showcase.png" alt="figure"></figure>
-                            </div>
-                            <div class="figure-showcase">
-                                <figure><img src="/assets/image/homepage/figure-showcase.png" alt="figure"></figure>
-                            </div>
-                            <div class="figure-showcase">
-                                <figure><img src="/assets/image/homepage/figure-showcase.png" alt="figure"></figure>
-                            </div>
-                            <div class="figure-showcase">
-                                <figure><img src="/assets/image/homepage/figure-showcase.png" alt="figure"></figure>
-                            </div>
-                            <div class="figure-showcase">
-                                <figure><img src="/assets/image/homepage/figure-showcase.png" alt="figure"></figure>
-                            </div>
-                            <div class="figure-showcase">
-                                <figure><img src="/assets/image/homepage/figure-showcase.png" alt="figure"></figure>
-                            </div>
-                        </div>
-
-                        <div class="mt-10 lg:mt-[72px] flex items-center justify-center">
-                            <a href="#" class="button">See More</a>
-                        </div>
-                    </div>
-                    <!-- place -->
-                    <div class="hidden lg:block"></div>
-                </div>
-            </div>
-        </section>
-        <!-- -------------------- section 8 -------------------- -->
-        <section class="bg-[#F9FAFB]">
-            <div class="w-full grid grid-cols-1 lg:grid-cols-2">
-                <div class="px-6 pb-6 relative">
-                    <figure class="absolute left-0 top-0"><img src="/assets/image/homepage/ss8-illus-1.svg" alt="illus">
-                    </figure>
-                    <figure class="absolute left-0 bottom-0"><img src="/assets/image/homepage/ss8-illus-1.svg"
-                            alt="illus">
-                    </figure>
-                    <div class="mx-auto flex flex-col lg:max-w-[444px]">
-                        <div class="float-line-dot w-fit">
-                            <div class="line"></div>
-                            <div class="dot"></div>
-                        </div>
-                        <div class="flex flex-col items-center">
-                            <div class="mt-6 lg:mt-10 2xl:mt-20 flex flex-col gap-6">
-                                <h2 class="mt-2 text-heading-h2-semibold font-title text-primary-2">Call to book
-                                    your
-                                    appointment</h2>
-                                <p class="text-body-lg-regular text-mono-gray-90">At Smile Dental, we
-                                    prioritize your oral health and convenience. Scheduling an appointment with our
-                                    experienced team is
-                                    simple and hassle-free.</p>
-                            </div>
-                            <div class="mt-6 2xl:mt-12 w-full flex flex-col gap-6">
+                        <div class="mt-10 lg:mt-[72px] flex justify-center items-center">
+                            <div class="w-full lg:max-w-[443px] flex flex-col gap-6">
                                 <div class="w-full flex items-center justify-center p-4 bg-white rounded-[5px]">
                                     <a href="#" class="link-text text-body-md-regular flex items-center gap-2">
                                         <figure class="min-w-[14px]">
@@ -650,85 +479,20 @@
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="">
-                    <!-- Slider main container -->
-                    <div id="review-swiper" class="swiper h-full">
-                        <!-- Additional required wrapper -->
-                        <div class="swiper-wrapper">
-                            <!-- Slides -->
-                            <div class="swiper-slide">
-                                <figure class="h-full"><img class="min-h-full"
-                                        src="/assets/image/homepage/review-img.png" alt="img">
-                                </figure>
-                                <div class="review-context">
-                                    <div class="flex flex-col gap-4">
-                                        <p class="text-body-lg-regular text-black">Emily S.</p>
-                                        <p class="text-body-lg-medium text-mono-dark-90">“ Exceptional care and
-                                            professionalism! The team at Smile Dental made me
-                                            feel
-                                            comfortable and valued. My smile has never
-                                            looked better—truly a five-star experience! “</p>
-                                        <div class="flex items-center gap-2">
-                                            <figure><img src="/assets/image/icon/star-active.svg" alt="star"></figure>
-                                            <figure><img src="/assets/image/icon/star-active.svg" alt="star"></figure>
-                                            <figure><img src="/assets/image/icon/star-active.svg" alt="star"></figure>
-                                            <figure><img src="/assets/image/icon/star-active.svg" alt="star"></figure>
-                                            <figure><img src="/assets/image/icon/star-active.svg" alt="star"></figure>
-                                            <figure><img src="/assets/image/icon/star-active.svg" alt="star"></figure>
-                                        </div>
-                                    </div>
-                                    <div class="mt-2 flex items-center justify-between gap-10">
-                                        <p class="text-body-lg-regular text-dark">280 Reviews on Google.</p>
-                                        <div class="bullet-static">
-                                            <!-- If we need navigation buttons -->
-                                            <div class="swiper-button-prev"></div>
-                                            <div class="swiper-button-next"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Slides -->
-                            <div class="swiper-slide">
-                                <figure class="h-full"><img class="min-h-full"
-                                        src="/assets/image/homepage/review-img.png" alt="img">
-                                </figure>
-                                <div class="review-context">
-                                    <div class="flex flex-col gap-4">
-                                        <p class="text-body-lg-regular text-black">Emily S.</p>
-                                        <p class="text-body-lg-medium text-mono-dark-90">“ Exceptional care and
-                                            professionalism! The team at Smile Dental made me
-                                            feel
-                                            comfortable and valued. My smile has never
-                                            looked better—truly a five-star experience! “</p>
-                                        <div class="flex items-center gap-2.5">
-                                            <figure><img src="/assets/image/icon/star-active.svg" alt="star"></figure>
-                                            <figure><img src="/assets/image/icon/star-active.svg" alt="star"></figure>
-                                            <figure><img src="/assets/image/icon/star-active.svg" alt="star"></figure>
-                                            <figure><img src="/assets/image/icon/star-active.svg" alt="star"></figure>
-                                            <figure><img src="/assets/image/icon/star-active.svg" alt="star"></figure>
-                                            <figure><img src="/assets/image/icon/star-active.svg" alt="star"></figure>
-                                        </div>
-                                    </div>
-                                    <div class="mt-2 flex items-center justify-between gap-10">
-                                        <p class="text-body-lg-regular text-dark">280 Reviews on Google.</p>
-                                        <div class="bullet-static">
-                                            <!-- If we need navigation buttons -->
-                                            <div class="swiper-button-prev"></div>
-                                            <div class="swiper-button-next"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
+                    <!-- place -->
+                    <div class="hidden lg:block"></div>
                 </div>
             </div>
         </section>
+        <!-- -------------------- section 5 -------------------- -->
+
+        <!-- -------------------- section 6 -------------------- -->
+
+        <!-- -------------------- section 7 -------------------- -->
+
+        <!-- -------------------- section 8 -------------------- -->
+
         <!-- -------------------- section 9 -------------------- -->
-
-
 
     </main>
     <footer class="footer bg-secondary">
@@ -944,13 +708,21 @@
 
     <!-- swiper script -->
     <script defer>
-        const swiper = new Swiper('#review-swiper', {
+        const swiper = new Swiper('#pa-swiper', {
             slidesPerView: 1,
-            spaceBetween: 0,
+            spaceBetween: 24,
             loop: true,
             autoplay: {
                 delay: 5000,
                 disableOnInteraction: false,
+            },
+            breakpoints: {
+                768: {
+                    slidesPerView: 2,
+                },
+                1024: {
+                    slidesPerView: 3,
+                },
             },
             speed: 1000,
 
